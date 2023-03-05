@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Caio Lemos Peixoto Martins" />
-    <meta name="description" content="Conheça nossa expertise no mercado imobiliário." />
+    <meta name="description" content="Conheça nossa expertise no mercado imobiliário e venha fazer seu orçamento conosco." />
     <meta name="keywords" content="Construtora, Orçamento, Construção, Prédios, Casas" />
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
     <link rel="stylesheet" href="Styles/style.css" />
     <link rel="stylesheet" href="Styles/media-query.css" />
     <title>Construtora</title>
@@ -16,18 +18,68 @@
 
 <body>
     <header>
-
+        <div id="home">
+            <h1 class="mark">Construtora</h1>
+            <h2><span class="mark">Mestres</span> em</h2>
+            <h2>Qualidade e</h2>
+            <h2><span class="mark">Velocidade</span></h2>
+            <h3>Faça seu orçamento conosco agora mesmo e mandaremos um de nossos engenheiros para fazer uma análise do local.</h3>
+            <div id="home-buttons">
+                <a id="expore" class="button" href="#about">Explore</a>
+                <a id="contact" class="button" href="#footer">Contato</a>
+            </div>
+            <div id="data">
+                <div id="projects">
+                    <div id="sphere-1" class="sphere"></div>
+                    <p class="number">53,986</p>
+                    <p class="words">Projetos</p>
+                </div>
+                <div id="buildings">
+                    <div id="sphere-2" class="sphere"> </div>
+                    <p class="number">42,312</p>
+                    <p class="words">Construções</p>
+                </div>
+                <div id="employes">
+                    <div id="sphere-3" class="sphere"> </div>
+                    <p class="number">12,000+</p>
+                    <p class="words">Funcionários</p>
+                </div>
+            </div>
+        </div>
+        <div id="lateral-box" class="box"></div>
+        <div id="header">
+            <div id="span">
+                <span id="burguer" class="material-symbols-outlined" onclick="menuBurguer()">menu</span>
+                <span id="close" class="material-symbols-outlined" onclick="menuBurguer()">close</span>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li class="menu-links"><a href="#home">Home</a></li>
+                    <li class="menu-links"><a href="#about">Sobre</a></li>
+                    <li class="menu-links"><a href="#services">Serviços</a></li>
+                    <li class="menu-links"><a href="#projects">Projetos</a></li>
+                    <li class="menu-links"><a href="https://caiolemos01.github.io/ProjetoLogin/" target="_self" rel="internal">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bottom-box" class="box"></div>
     </header>
     <main>
-        
+        <section id="partners">
+            <div><p class="partners">Suprimentos SP</p></div>
+            <div><p class="partners">Cursos IS</p></div>
+            <div><p class="partners">Mercado Vegas</p></div>
+            <div><p class="partners">Vendinha do Gil</p></div>
+        </section>
     </main>
-    <footer>
+    <footer id="footer">
         <p>&copy; 2023</p>
         <div>
             <h3>Favicon</h3>
             <a href="https://www.flaticon.com/free-icons/apartment" title="apartment icons">Apartment icons created by Freepik - Flaticon</a>
         </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

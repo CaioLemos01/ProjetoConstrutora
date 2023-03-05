@@ -1,1 +1,231 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400&display=swap');
+
+:root {
+    --color-header-links: #ffffff;
+    --color-header-links-hover: #1ca9c2;
+    --color-burguer: #ffffff;
+    --color-primary: #1ca9c2;
+    --color-primary-less-opacity: #1ca9c279;
+    --color-secondary: #fff;
+    --color-font: #000000;
+    --color-box: #18545f18;
+    --color-menu-background: #313131b4;
+    --font-primary: 'Inter', sans-serif;
+    /*100 - 900*/
+    --font-secondary: 'Roboto', sans-serif;
+    /*100, 400*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body, html {
+    margin-top: 4px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#home {
+    width: 40%;
+    margin-left: 10px;
+}
+
+#home > h1 {
+    font-size: small;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+#home > h2 {
+    font-size: x-large;
+}
+
+#home > h3 {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.mark {
+    color: var(--color-primary);
+}
+
+#home-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 14px;
+    gap: 12px;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid var(--color-primary);
+    padding: 6px 16px;
+    font-weight: 500;
+    border-radius: 18px 0;
+    font-size: 10px;
+    color: var(--color-primary);
+}
+
+.button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: .2s;
+    box-shadow: 0 0 10px var(--color-primary-less-opacity);
+}
+
+#data {
+    display: flex;
+    margin-top: 26px;
+    justify-content: space-between;
+}
+
+.words {
+    font-size: 8px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sphere {
+    width: 18px;
+    height: 10px;
+    border-radius: 15px 15px 0 0 ;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-50deg);
+}
+
+#sphere-1 {
+    background-color: var(--color-primary);
+    left: 3%;
+}
+
+#sphere-2 {
+    background-color: #06b900;
+    left: 17.4%;
+}
+
+#sphere-3 {
+    background-color: #d65600;
+    left: 31%;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../Images/predio.jpg);
+    background-position: center center;
+    width: 50%;
+    height: 32vh;
+    background-size: cover;
+    border-radius: 0 0 0 70px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.418);
+}
+
+#burguer {
+    cursor: pointer;
+    padding: 6px;
+    color: var(--color-burguer);
+}
+
+#close {
+    cursor: pointer;
+    display: none;
+    padding: 6px;
+    color: var(--color-burguer);
+}
+
+#burguer:hover {
+    color: var(--color-primary);
+}
+
+#close:hover {
+    color: var(--color-primary);
+}
+
+#nav-bar {
+    display: none;
+    width: 30vw;
+    height: 18vh;
+    text-align: center;
+    font-family: var(--font-primary);
+    background-color: var(--color-menu-background);
+    border-radius: 0 0 0 20px;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 6px;
+}
+
+.menu-links > a {
+    font-family: var(--font-primary);
+    font-weight: 300;
+    color: var(--color-header-links);
+    text-decoration: none;
+}
+
+.menu-links > a:hover {
+    font-weight: 600;
+    color: var(--color-header-links-hover);
+    transition: .2s;
+}
+
+.box {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: var(--color-box);
+}
+
+#lateral-box {
+    border-radius: 40px 0 0 0;
+    left: 41.4%;
+    top: 4%;
+    z-index: -1;
+}
+
+#bottom-box {
+    transform: rotate(90deg);
+    border-radius: 0 40px 0 0;
+    top: 31.3%;
+    left: 84%;
+    z-index: -1;
+}
+
+#partners {
+    display: flex;
+    margin-top: 50px;
+    height: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: rgba(214, 214, 214, 0.274);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
